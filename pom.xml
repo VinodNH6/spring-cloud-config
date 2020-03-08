@@ -2,12 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+
 	<groupId>com.vin</groupId>
-	<artifactId>spring-cloud</artifactId>
+	<artifactId>spring-cloud-multimodule-project</artifactId>
+	<name>spring-cloud-multimodule-project</name>
 	<version>0.0.1-SNAPSHOT</version>
+	
 	<packaging>pom</packaging>
 
-	<name>spring-cloud</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -25,8 +27,12 @@
 
 	<modules>
 		<module>spring-config-server</module>
-		<module>spring-config-client</module>
-  	</modules>
+<!-- 		<module>spring-config-product-service</module> -->
+<!--  		<module>spring-config-cart-service</module> -->
+<!--  		<module>newservice</module> -->
+ 		<module>product-service</module>
+ 		<module>cart-service</module>
+	</modules>
 
 	<dependencyManagement>
 		<dependencies>

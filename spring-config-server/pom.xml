@@ -3,15 +3,17 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<groupId>spring-config-server</groupId>
 	<artifactId>spring-config-server</artifactId>
-	<packaging>jar</packaging>
-
 	<name>spring-config-server</name>
+	<version>0.0.1</version>
+		
+	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
-
+	
 	<parent>
 		<groupId>com.vin</groupId>
-		<artifactId>spring-cloud</artifactId>
+		<artifactId>spring-cloud-multimodule-project</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
@@ -22,7 +24,8 @@
 		<spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
 	</properties>
 
-	<dependencies>
+
+	<dependencies>  
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
@@ -30,6 +33,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
